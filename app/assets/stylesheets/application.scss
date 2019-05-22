@@ -11,3 +11,26 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.container {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgb(194, 194, 194);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  a {
+    color: white;
+    font-weight: 500;
+  }
+}

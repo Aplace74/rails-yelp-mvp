@@ -1,8 +1,11 @@
-<h1>Restaurants</h1><span><%= link_to 'add a restaurant', new_restaurant_path %></span>
+<div class="d-flex justify-content-around">
+  <h1>Restaurants</h1>
+  <button class="btn btn-primary"><%= link_to 'add a restaurant', new_restaurant_path %></button>
+</div>
 
 <% @restaurants.each do |resto| %>
-  <ul>
-    <li>
+  <ul class="list-group text-center my-3">
+    <li class="list-group-item">
      <%= link_to resto.name, restaurant_path(resto) %>
     </li>
   </ul>

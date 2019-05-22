@@ -1,11 +1,13 @@
 <h1>Add a Restaurant</h1>
 
+<div class="m-3">
 <%= simple_form_for (@restaurant) do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
-  <%= f.input :category %>
+  <%= f.select :category, collection: Restaurant::CATEGORY %>
   <%= f.input :phone_number %>
   <%= f.submit "add a restaurant", class: "btn btn-primary" %>
 <% end %>
 
-<%= link_to 'go back', restaurants_path %>
+<button class="btn btn-secondary m-3"><%= link_to 'go back', restaurants_path %></button>
+</div>
